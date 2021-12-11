@@ -14,16 +14,16 @@ public class FilmManagerTest {
     //добавлено 10 фильмов, выдать все
     public void shouldLast10FilmsIfExist10() {
         FilmManager manager = new FilmManager();
-        FilmItem first = new FilmItem(1, "first", "first");
-        FilmItem second = new FilmItem(2, "second", "second");
-        FilmItem third = new FilmItem(3, "third", "third");
-        FilmItem fourth = new FilmItem(4, "fourth", "fourth");
-        FilmItem fifth = new FilmItem(5, "fifth", "fifth");
-        FilmItem sixth = new FilmItem(6, "sixth", "sixth");
-        FilmItem seventh = new FilmItem(7, "seventh", "seventh");
-        FilmItem eighth = new FilmItem(8, "eighth", "eighth");
-        FilmItem ninth = new FilmItem(9, "ninth", "ninth");
-        FilmItem tenth = new FilmItem(10, "tenth", "tenth");
+        FilmItem first = new FilmItem(1, "first", "detective");
+        FilmItem second = new FilmItem(2, "second", "melodrama");
+        FilmItem third = new FilmItem(3, "third", "detective");
+        FilmItem fourth = new FilmItem(4, "fourth", "drama");
+        FilmItem fifth = new FilmItem(5, "fifth", "drama");
+        FilmItem sixth = new FilmItem(6, "sixth", "drama");
+        FilmItem seventh = new FilmItem(7, "seventh", "drama");
+        FilmItem eighth = new FilmItem(8, "eighth", "drama");
+        FilmItem ninth = new FilmItem(9, "ninth", "detective");
+        FilmItem tenth = new FilmItem(10, "tenth", "detective");
         manager.add(first);
         manager.add(second);
         manager.add(third);
@@ -46,17 +46,17 @@ public class FilmManagerTest {
     //добавлено фильмов больше 10, выдать последние 10
     public void shouldLast10FilmsIfExistMore10() {
         FilmManager manager = new FilmManager();
-        FilmItem first = new FilmItem(1, "first", "first");
-        FilmItem second = new FilmItem(2, "second", "second");
-        FilmItem third = new FilmItem(3, "third", "third");
-        FilmItem fourth = new FilmItem(4, "fourth", "fourth");
-        FilmItem fifth = new FilmItem(5, "fifth", "fifth");
-        FilmItem sixth = new FilmItem(6, "sixth", "sixth");
-        FilmItem seventh = new FilmItem(7, "seventh", "seventh");
-        FilmItem eighth = new FilmItem(8, "eighth", "eighth");
-        FilmItem ninth = new FilmItem(9, "ninth", "ninth");
-        FilmItem tenth = new FilmItem(10, "tenth", "tenth");
-        FilmItem eleven = new FilmItem(11, "eleven", "eleven");
+        FilmItem first = new FilmItem(1, "first", "drama");
+        FilmItem second = new FilmItem(2, "second", "detective");
+        FilmItem third = new FilmItem(3, "third", "thriller");
+        FilmItem fourth = new FilmItem(4, "fourth", "detective");
+        FilmItem fifth = new FilmItem(5, "fifth", "melodrama");
+        FilmItem sixth = new FilmItem(6, "sixth", "detective");
+        FilmItem seventh = new FilmItem(7, "seventh", "detective");
+        FilmItem eighth = new FilmItem(8, "eighth", "melodrama");
+        FilmItem ninth = new FilmItem(9, "ninth", "thriller");
+        FilmItem tenth = new FilmItem(10, "tenth", "detective");
+        FilmItem eleven = new FilmItem(11, "eleven", "thriller");
         manager.add(first);
         manager.add(second);
         manager.add(third);
@@ -77,15 +77,15 @@ public class FilmManagerTest {
     //добавлено фильмов меньше 10, выдать все
     public void shouldLast10FilmsIfExistLess10() {
         FilmManager manager = new FilmManager(9);
-        FilmItem first = new FilmItem(1, "first", "first");
-        FilmItem second = new FilmItem(2, "second", "second");
-        FilmItem third = new FilmItem(3, "third", "third");
-        FilmItem fourth = new FilmItem(4, "fourth", "fourth");
-        FilmItem fifth = new FilmItem(5, "fifth", "fifth");
-        FilmItem sixth = new FilmItem(6, "sixth", "sixth");
-        FilmItem seventh = new FilmItem(7, "seventh", "seventh");
-        FilmItem eighth = new FilmItem(8, "eighth", "eighth");
-        FilmItem ninth = new FilmItem(9, "ninth", "ninth");
+        FilmItem first = new FilmItem(1, "first", "drama");
+        FilmItem second = new FilmItem(2, "second", "melodrama");
+        FilmItem third = new FilmItem(3, "third", "thriller");
+        FilmItem fourth = new FilmItem(4, "fourth", "horrors");
+        FilmItem fifth = new FilmItem(5, "fifth", "detective");
+        FilmItem sixth = new FilmItem(6, "sixth", "detective");
+        FilmItem seventh = new FilmItem(7, "seventh", "melodrama");
+        FilmItem eighth = new FilmItem(8, "eighth", "horrors");
+        FilmItem ninth = new FilmItem(9, "ninth", "detective");
 
         manager.add(first);
         manager.add(second);
