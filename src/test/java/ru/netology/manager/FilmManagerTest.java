@@ -2,7 +2,6 @@ package ru.netology.manager;
 
 
 import ru.netology.domain.FilmItem;
-import ru.netology.manager.FilmManager;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -34,11 +33,8 @@ public class FilmManagerTest {
         manager.add(eighth);
         manager.add(ninth);
         manager.add(tenth);
-
         FilmItem[] actual = manager.getLastFilms();
         FilmItem[] expected = new FilmItem[]{tenth, ninth, eighth, seventh, sixth, fifth, fourth, third, second, first};
-
-
         assertArrayEquals(expected, actual);
     }
 
@@ -86,7 +82,6 @@ public class FilmManagerTest {
         FilmItem seventh = new FilmItem(7, "seventh", "melodrama");
         FilmItem eighth = new FilmItem(8, "eighth", "horrors");
         FilmItem ninth = new FilmItem(9, "ninth", "detective");
-
         manager.add(first);
         manager.add(second);
         manager.add(third);
