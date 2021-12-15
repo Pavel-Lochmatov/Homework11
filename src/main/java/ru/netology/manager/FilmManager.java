@@ -6,8 +6,10 @@ public class FilmManager {
 
     private int count = 10;
 
+    // конструктор
     public FilmManager() {
     }
+
     // конструктор менеджера фильмов с заданием количества
     public FilmManager(int count) {
         this.count = count;
@@ -18,6 +20,7 @@ public class FilmManager {
     }
 
     private FilmItem[] items = new FilmItem[0];
+
     //добавление фильма
     public void add(FilmItem item) {
         // создаём новый массив размером на единицу больше
