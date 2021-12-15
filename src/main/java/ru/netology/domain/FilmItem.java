@@ -1,6 +1,7 @@
 package ru.netology.domain;
 
 public class FilmItem {
+
     private int id;
     private String name;
     private String gerne;
